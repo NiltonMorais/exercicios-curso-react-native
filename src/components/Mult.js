@@ -2,12 +2,12 @@ import React from 'react';
 import { Text } from 'react-native';
 import Default from '../style/Default';
 
-export const Reverse = (props) => {
+const Reverse = (props) => {
     let rev = props.text.split('').reverse().join('');
     return <Text style={Default.exercices}>{rev}</Text>
 };
 
-export const RandNumbers = props => {
+const RandNumbers = props => {
     const [min, max] = [1, 60];
     const numbers = Array(props.numbers || 6).fill(0);
 
@@ -23,3 +23,5 @@ export const RandNumbers = props => {
 
     return <Text style={Default.exercices}>{numbers.join(', ')}</Text>
 };
+
+export {Reverse, RandNumbers}
