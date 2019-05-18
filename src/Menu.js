@@ -5,8 +5,12 @@ import Simple from './components/Simple';
 import ParImpar from './components/ParImpar';
 import { Reverse, RandNumbers } from './components/Mult';
 import Count from './components/Count';
+import Platform from './components/Platform';
 
 export default createDrawerNavigator({
+    Platform: {
+        screen: Platform
+    },
     Count: {
         screen: () => <Count startNumber={8} />
     },
