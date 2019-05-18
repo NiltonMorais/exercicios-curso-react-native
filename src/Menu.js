@@ -4,8 +4,12 @@ import { createDrawerNavigator } from 'react-navigation';
 import Simple from './components/Simple';
 import ParImpar from './components/ParImpar';
 import { Reverse, RandNumbers } from './components/Mult';
+import Count from './components/Count';
 
 export default createDrawerNavigator({
+    Count: {
+        screen: () => <Count startNumber={8} />
+    },
     RandNumbers: {
         screen: () => <RandNumbers numbers={8}/>,
         navigationOptions: { title: 'Números Randômicos'}
