@@ -6,8 +6,12 @@ import ParImpar from './components/ParImpar';
 import { Reverse, RandNumbers } from './components/Mult';
 import Count from './components/Count';
 import Platform from './components/Platform';
+import PropsValidate from './components/PropsValidate';
 
 export default createDrawerNavigator({
+    PropsValidate: {
+      screen: () => <PropsValidate year={18}/>
+    },
     Platform: {
         screen: Platform
     },
