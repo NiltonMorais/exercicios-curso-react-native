@@ -7,8 +7,12 @@ import { Reverse, RandNumbers } from './components/Mult';
 import Count from './components/Count';
 import Platform from './components/Platform';
 import PropsValidate from './components/PropsValidate';
+import Event from './components/Event';
 
 export default createDrawerNavigator({
+    Event: {
+      screen: Event
+    },
     PropsValidate: {
       screen: () => <PropsValidate year={18}/>
     },
