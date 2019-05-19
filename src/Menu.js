@@ -8,8 +8,13 @@ import Count from './components/Count';
 import Platform from './components/Platform';
 import PropsValidate from './components/PropsValidate';
 import Event from './components/Event';
+import ListFlex from './components/ListFlex';
 
 export default createDrawerNavigator({
+    ListFlex: {
+      screen: ListFlex,
+      navigationOptions: { title: 'List (FlexBox)'}
+    },
     Event: {
       screen: Event
     },
