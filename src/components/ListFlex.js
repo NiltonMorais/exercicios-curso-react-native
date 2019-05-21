@@ -25,10 +25,17 @@ const students = [
 
 const itemStyle = {
     paddingHorizontal: 15,
-    height: 50,
+    height: 60,
     backgroundColor: '#DDD',
     borderWidth: 0.5,
-    borderColor: '#222'
+    borderColor: '#222',
+
+
+    // Flex
+    //justifyContent: 'center'
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-between'
 };
 
 export const Student = props =>
